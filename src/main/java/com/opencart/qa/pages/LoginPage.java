@@ -22,7 +22,7 @@ public class LoginPage {
 		eleUtil = new ElementUtil(driver);
 	}
 	
-	//3. private By locators: PO
+	//3. private By locators: PO 
 	private final By emailId = By.id("input-email");
 	private final By password = By.id("input-password");
 	private final By loginBtn = By.cssSelector("input[type='submit']");
