@@ -12,7 +12,7 @@ pipeline
         {
             steps
             {
-                 git 'https://github.com/meetmera12-del/java_selenium_framework.git'
+                 git 'https://github.com/jglick/simple-maven-project-with-tests.git'
                  sh "mvn -Dmaven.test.failure.ignore=true clean package"
             }
             post 
