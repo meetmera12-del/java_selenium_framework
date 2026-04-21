@@ -37,13 +37,12 @@ public class BaseTest {
 
 	@Parameters({"browser"})
 	@BeforeTest
-	public void setup(@Optional("chrome")String browserName) {
+	public void setup(@Optional("chrome") String browserName) {
 		df = new DriverFactory();
 		prop = df.initProp();
 		
 			if(browserName!=null) { //browserName is coming from xml file
 				prop.setProperty("browser", browserName);
-				//prop.setProperty("browser", browserName);
 			}	
 		
 		driver = df.initDriver(prop);
@@ -71,7 +70,3 @@ public class BaseTest {
 	}
 
 }
-
-	
-	
-

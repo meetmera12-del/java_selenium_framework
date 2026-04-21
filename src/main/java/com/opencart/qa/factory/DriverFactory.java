@@ -148,23 +148,23 @@ public class DriverFactory {
 		try {
 			if (envName == null) {
 				System.out.println("env name is null, hence running test cases on QA environment...");
-				ip = new FileInputStream("./src/test/resources/config/config.qa.properties");
+				ip = new FileInputStream("./src/test/resources/configfolder/config.qa.properties");
 			} else {
 				switch (envName.trim().toLowerCase()) {
 				case "qa":
-					ip = new FileInputStream("./src/test/resources/config/config.qa.properties");
+					ip = new FileInputStream("./src/test/resources/configfolder/config.qa.properties");
 					break;
 				case "dev":
-					ip = new FileInputStream("./src/test/resources/config/config.dev.properties");
+					ip = new FileInputStream("./src/test/resources/configfolder/config.dev.properties");
 					break;
 				case "stage":
-					ip = new FileInputStream("./src/test/resources/config/config.stage.properties");
+					ip = new FileInputStream("./src/test/resources/configfolder/config.stage.properties");
 					break;
 				case "uat":
-					ip = new FileInputStream("./src/test/resources/config/config.uat.properties");
+					ip = new FileInputStream("./src/test/resources/configfolder/config.uat.properties");
 					break;
 				case "prod":
-					ip = new FileInputStream("./src/test/resources/config/config.properties");
+					ip = new FileInputStream("./src/test/resources/configfolder/config.properties");
 					break;
 				default:
 					System.out.println("=========invalid env name: =====" + envName);
